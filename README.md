@@ -64,7 +64,7 @@ CREATE TABLE students.student_info (
 
 ---
 
-## ✅ 7. Insert Sample Data (Optional)
+## ✅ 7. Insert Sample Data 
 
 ```sql
 INSERT INTO students.student_info (firstname, lastname, phonenumber, email, age, schoolfees)
