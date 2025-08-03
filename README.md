@@ -23,30 +23,32 @@ CREATE SCHEMA students AUTHORIZATION lillianchengwa;
 
  5. Grant Privileges to the User
 
-GRANT USAGE ON SCHEMA students TO lillianchengwa;
-GRANT CREATE ON SCHEMA students TO lillianchengwa;
+Grant usagee on schema students TO lillianchengwa;
+Grant create students TO lillianchengwa;
 
- 6. Create Table `student_info` with Metadata
+ 6. create table students
 
-CREATE TABLE students.student_info (
-    id SERIAL PRIMARY KEY,
-    firstname VARCHAR(50),
-    lastname VARCHAR(50),
-    phonenumber VARCHAR(20),
-    email VARCHAR(100),
-    age INT,
-    schoolfees NUMERIC(10,2)
-);
+  (first_name varchar (50),
+  last_name varchar (50),
+  phone_number char(10),
+  email text unique not null,
+  age int,
+  fee_paid numeric);
+
+
  7. Insert Sample Data 
 
-INSERT INTO students.student_info (firstname, lastname, phonenumber, email, age, schoolfees)
-VALUES
-('Lillian', 'Chengwa', '0729204204', 'lillianchengwa@gmail.com', 34, 7000.00),
-('Nigel', 'Njagi', '0727888701', 'nigelnjagi@gmail.com', 13, 2000.00);
+Insert into students 
+(first_name,last_name,phone_number,email,age,fee_paid)
+values
+('Patrick', 'Mwenda', '0707959533', 'patrickm@gmail.com',50, 12500),
+('Stella', 'Mweni', '0721546357', 'stellatheone@gmail.com', 18, 35000),
+('Lillian','Chengwa','0729204304',' chen@gmail.com',22, 30000);
 
- Notes
+8.alter table students
+add column comments varchar(50);
 
-* The schema `students` is owned by `lillianchengwa`.
-* The table `student_info` resides within the `students` schema.
-* Use DBeaver or `psql` CLI to view or manage the data.
+select * from students;
 
+
+ 
