@@ -1,5 +1,3 @@
-Certainly! Here's your Markdown content – you can **copy and paste** this into a `.md` file (e.g., `postgresql_students_setup.md`):
-
 ````markdown
 # PostgreSQL Setup and Students Schema
 
@@ -83,7 +81,4 @@ VALUES
 * The table `student_info` resides within the `students` schema.
 * Use DBeaver or `psql` CLI to view or manage the data.
 
-```
-
-Let me know if you'd like a version with DBeaver setup included.
 ```
