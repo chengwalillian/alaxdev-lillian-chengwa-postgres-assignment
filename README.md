@@ -3,16 +3,16 @@
 
 This guide documents Luxdev tutorial steps on 30th and 31st July 2025 to install PostgreSQL, create a schema, grant privileges to a user, and create a sample table with metadata.
 
- 1. Install PostgreSQL (Ubuntu 24.04.2 LTS)
+ ## 1. Install PostgreSQL (Ubuntu 24.04.2 LTS)
 
 sudo apt update
 sudo apt install postgresql postgresql-contrib
 
- 2. Log into PostgreSQL as the default user
+## 2. Log into PostgreSQL as the default user
 sudo -i -u postgres
 psql
 
- 3. Create PostgreSQL User
+ ## 3. Create PostgreSQL User
 
 CREATE USER lillianchengwa WITH PASSWORD 'lillian_chengwa_students_password';
 
